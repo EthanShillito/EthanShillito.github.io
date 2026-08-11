@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <header>
+        <title>Ethan Shillito</title>
+        <nav>
+            <button class="header_button" onclick="location.href = '../index.html';">Back</button>
+        </nav>
+    </header>
+
+    <body>
+        <section>
+            <H2>Park Bubble Battle</H2>
+
+            <p class="portfolio_text">My entry to the 2025 Global Game Jam. 
+                            This is a two player split screen PvP game where players run around in a park shooting bubbles at each other.
+            </p>
+
+            <div class="portfolio_item">
+                <H3>Pooled Actor<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/BubbleBattle/BB_4.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">With the intention of improved memory managment I created a pooled actor class for the bubbles. So that all bubbles to be used in the game are already loaded into memory and just placed in the correct world position when used.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Damage System<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">I also implemented a damage system with UI display to handle the bubbles dealing damage to the players and cause a game over if one runs out of health.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/BubbleBattle/BB_DamageSystem.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Water Meter<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/BubbleBattle/BB_WaterSystem.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">The game also has a water meter which must be partially full to shoot a bubble. Refilling requires moving near the fountain and disables attacks while refilling to prevent exploiting it for infinite ammo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>

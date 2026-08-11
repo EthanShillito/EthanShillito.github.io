@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <header>
+        <title>Ethan Shillito</title>
+        <nav>
+            <button class="header_button" onclick="location.href = '../index.html';">Back</button>
+        </nav>
+    </header>
+
+    <body>
+        <section>
+            <H2>Hierarchical city generator</H2>
+            <p class="portfolio_text">For my third year project I built this city generator where each part of the generation is split into a separate component defined by its own interface, creating a hierarchy of different layers of generation.
+            </p>
+
+            <div class="portfolio_item">
+                <H3>Generation<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/IP/IP_Generate.gif">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">When the generate method is called on the overall generator component it will sequentially call the generation method on each of the components for each layer:
+                        </p>
+                        <ul class="portfolio_text">
+                            <li>Road generation - Creates road path and places road meshes</li>
+                            <li>Building generation - Allocates builidng plots and places meshes inside each plot</li>
+                            <li>Road details generation - Scatters details such as benches and signs across the roads</li>
+                            <li>Building details generation - Adds details to building attachment pins</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Layered Approach<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Each layer's component is defined by an interface through which all communication with other layers takes place, through the inputs and outputs.
+                        </p>
+                        <p class="portfolio_text">
+                            This allows for different implementations to be swapped out in place of a certain component while allowing all other layers to continue to function as expected.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/IP/IP_Layers.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Space Collonisation Algorithm<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/IP/IP_SpaceCollonisation.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">To generate the path for road meshes to be instanced on I make use of the space collonisation algorithm. This algorithm scatters attraction points across a given area, which road points then grow towards iteratively to create a natural shaped road design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Minimum Cycle Basis<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text"> To allocate plots for buildings I make use of a Minimum Cycle Basis algorithm to detect the smallest cycles in the graph of road nodes - being the closed loops where buildings can be placed.
+                            These cycles are then inset away from the roads and then subdivided until they reach a requried approximate area range for building meshes to be placed in.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/IP/IP_MinimumCycleBasis.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+             <H3>Snappable Meshes<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/IP/IP_SnappableMeshes.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Building details are added using an iterative algorithm which searches for connection points placed in the world (on buildings) and attempts to align the points on details with these connectors, if placement rules allow them to be connected.
+                            Placement rules specify that if two connection points have the same pin count and their pin colours match a matrix of compatible colours then they are allowed to connect, allowing different details to be placed in different areas or for details to chain following one way relationships due to the non-symetric nature of the matrix.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </body>
+
+</html>

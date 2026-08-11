@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="./style.css">
+         <script type = "text/javascript" src="./main.js"></script>
+    </head>
+
+    <header>
+        <title>Ethan Shillito</title>
+        <nav>
+            <button class="header_button" onclick="scroll_to('home');">Home</button>
+            <button class="header_button" onclick="scroll_to('portfolio');">Projects</button>
+            <button class="header_button" onclick="scroll_to('about_me');">About Me</button>
+            <button class="header_button" onclick="scroll_to('contact');">Contact</button>
+            <a class="CV_button" href="./CV/Ethan Shillito CV.pdf" target="_blank">View CV</a>
+        </nav>
+    </header>
+
+    <body>
+        <section id="home">
+            <H1>Ethan Shillito</H1>
+            <H5>Gameplay Programmer Portfolio</H5>
+             <div class="home_row">
+                <div class="home_column">
+                    <img src="./images/IP/Defualt config.png">
+                    <img src="./images/Attachable_actors/AA_Spinning.png">
+                    <img src="./images/ParentPandamonium/PP_Level.png">
+                </div>
+
+                <div class="home_column">
+                    <img src="./images/ParentPandamonium/PP_PathfindGrid.png">
+                    <img src="./images/IP/buildings.png">
+                    <img src="./images/FrogQuest/FQ_Fire.png">
+                </div>
+
+                <div class="home_column">
+                 <img src="./images/BubbleBattle/BB_1.png">
+                 <img src="./images/FrogQuest/FQ_Level3.png">
+                 <img src="./images/Attachable_actors/AA_Holding.png">
+                </div>
+
+            </div>
+        </section>
+        <section id="portfolio">
+            <H2>Projects</H2>
+            <div class="portfolio_item">
+                <button class="nav_button" onclick="location.href = './projects/city_gen.html';">Hierarchical city generator</button>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <div class="display">
+                            <img src="./images/IP/Defualt config.png" alt="" id="ip_slide_1">
+                            <img src="./images/IP/Default road details.png" alt="" id="ip_slide_2">
+                            <img src="./images/IP/buildings.png" alt="" id="ip_slide_3">
+                            <img src="./images/IP/building details low passes.png" alt="" id="ip_slide_4">
+                        </div>
+                        <div class="display_nav">
+                            <a href="#ip_slide_1"></a>
+                            <a href="#ip_slide_2"></a>
+                            <a href="#ip_slide_3"></a>
+                            <a href="#ip_slide_4"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <ul class="portfolio_text">
+                            <li>Unity, C#</li>
+                            <li>Individual project</li>
+                            <li>Oct 2025 - Apr 2026</li>
+                        </ul>
+                        <p class="portfolio_text">For my third year project I built this city generator where each part of the generation is split into a separate component defined by its own interface, creating a hierarchy of different layers of generation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <button class="nav_button" onclick="location.href = './projects/attachable_phyisics_actors.html';">Attachable physics actors</button>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <ul class="portfolio_text">
+                            <li>UE5, C++, Blueprints</li>
+                            <li>Individual project</li>
+                            <li>Jun 2026 - Jul 2026</li>
+                        </ul>
+                        <p class="portfolio_text">A prototype for a game jam that makes use of a custom C++ component and the physics component to attach multiple actors together - functioning like a simple version of the ultrahand from Tears of the Kingdom. 
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <div class="display">
+                            <img src="./images/Attachable_actors/AA_Holding.png" alt="" id="aa_slide_1">
+                            <img src="./images/Attachable_actors/AA_Attachment.png" alt="" id="aa_slide_2">
+                            <img src="./images/Attachable_actors/AA_Spinning.png" alt="" id="aa_slide_3">
+                        </div>
+                        <div class="display_nav">
+                            <a href="#aa_slide_1"></a>
+                            <a href="#aa_slide_2"></a>
+                            <a href="#aa_slide_3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio_item">
+                <button class="nav_button" onclick="location.href = './projects/parent_pandamonium.html';">Parent Pandamonium</button>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <div class="display">
+                            <img src="./images/ParentPandamonium/PP_Level.png" alt="" id="pp_slide_1">
+                            <img src="./images/ParentPandamonium/PP_PathfindGrid.png" alt="" id="pp_slide_2">
+                            <img src="./images/ParentPandamonium/PP_MenuImage.png" alt="" id="pp_slide_3">
+                            <img src="./images/ParentPandamonium/PP_End.png" alt="" id="pp_slide_4">
+                        </div>
+                        <div class="display_nav">
+                            <a href="#pp_slide_1"></a>
+                            <a href="#pp_slide_2"></a>
+                            <a href="#pp_slide_3"></a>
+                            <a href="#pp_slide_4"></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <ul class="portfolio_text">
+                            <li>Unity, C#</li>
+                            <li>Group project</li>
+                            <li>Oct 2025 - Nov 2025</li>
+                        </ul>
+                        <p class="portfolio_text">This was a game development coursework focused on tutorials and explaining mechanics.
+                            In this game the player must complete tasks around the house while looking after the baby that will try to crawl into danger.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio_item">
+                <button class="nav_button" onclick="location.href = './projects/frog_quest.html';">Frog Quest</button>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <ul class="portfolio_text">
+                            <li>Unity, C#</li>
+                            <li>Group project</li>
+                            <li>Nov 2025 - Jan 2026</li>
+                        </ul>
+                        <p class="portfolio_text">My other game development coursework focused on story telling and combining it with mechanics.
+                            This is a box pushing puzzle game where the player must bring an offering to the end of each set of three levels, the offering taken to the end determines what the player can ask for.
+                            Different offerings are of different sizes, impacting how levels need to be solved.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <div class="display">
+                            <img src="./images/FrogQuest/FQ_Level_1.png" alt="" id="fq_slide_1">
+                            <img src="./images/FrogQuest/FQ_Fire.png" alt="" id="fq_slide_2">
+                            <img src="./images/FrogQuest/FQ_Level2.png" alt="" id="fq_slide_3">
+                            <img src="./images/FrogQuest/FQ_Level3.png" alt="" id="fq_slide_4">
+                        </div>
+                        <div class="display_nav">
+                            <a href="#fq_slide_1"></a>
+                            <a href="#fq_slide_2"></a>
+                            <a href="#fq_slide_3"></a>
+                            <a href="#fq_slide_4"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio_item">
+                <button class="nav_button" onclick="location.href = './projects/bubble_battle.html';">Park Bubble Battle</button>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <div class="display">
+                            <img src="./images/BubbleBattle/BB_1.png" alt="" id="bb_slide_1">
+                            <img src="./images/BubbleBattle/BB_3.png" alt="" id="bb_slide_2">
+                            <img src="./images/BubbleBattle/BB_4.png" alt="" id="bb_slide_3">
+                            <img src="./images/BubbleBattle/BB_2.png" alt="" id="bb_slide_4">
+                        </div>
+                        <div class="display_nav">
+                            <a href="#bb_slide_1"></a>
+                            <a href="#bb_slide_2"></a>
+                            <a href="#bb_slide_3"></a>
+                            <a href="#bb_slide_4"></a>
+                        </div>
+                    </div>
+                     <div class="portfolio_text_wrapper">
+                        <ul class="portfolio_text">
+                            <li>UE5, C++, Blueprints</li>
+                            <li>Individual project</li>
+                            <li>Jan 2025</li>
+                        </ul>
+                        <p class="portfolio_text">My entry to the 2025 Global Game Jam. 
+                            This is a two player split screen PvP game where players run around in a park shooting bubbles at each other.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="about_me">
+            <H2>About</H2>
+            <H4>Gamplay Programmer</H4>
+            <p class="centered_text">
+                I'm a Games Programmer with a specific interest in mechanic design and storytelling in games. I have exprience working in both the Unreal and Unity Engines, using both C++ and C#.
+            </p>
+            <p class="centered_text">
+                I recently Graduated with a First Class BSc (Hons) in Computer Science from the University of Southampton, and am looking forward to starting my career in game development.
+            </p>
+            <div class="centered_img">
+                <img src="./images/Main/ProfilePic.jpg" class="ProfilePic">
+            </div>
+        </section>
+        <section id="contact", class="greyed">
+            <H4>Contact</H4>
+            
+            <div class="contact_content">
+                <div class="contact_section">
+                <button class="nav_button" onclick="location.href = 'https://www.linkedin.com/in/ethan-shillito-158031413';">
+                    <img class="contact_icon" src="./images/Main/LI-In-Bug.png">
+                </button>
+                </div>
+
+                <div class="contact_section">
+                <button class="nav_button" onclick="location.href = 'https://github.com/EthanShillito';">
+                    <img class="contact_icon" src="./images/Main/GitHub_Invertocat_Black.png">
+                </button>
+                </div>
+
+                <div class="contact_section">
+                <button class="nav_button" onclick="location.href = 'mailto:ethan@shillitos.org.uk';">
+                 <img class="contact_icon" src="./images/Main/emailicon.png">
+                 <p>ethan@shillitos.org.uk</p>
+                </button>
+                </div>
+
+                <div class="contact_section">
+                 <img class="contact_icon" src="./images/Main/phoneicon.png">
+                 <p>07931 837732</p>
+                </div>
+
+            </div>
+
+        </section>
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <header>
+        <title>Ethan Shillito</title>
+        <nav>
+            <button class="header_button" onclick="location.href = '../index.html';">Back</button>
+        </nav>
+    </header>
+
+    <body>
+        <section>
+            <H2>Frog Quest</H2>
+
+            <p class="portfolio_text">My other game development coursework focused on story telling and combining it with mechanics.
+                This is a box pushing puzzle game where the player must bring an offering to the end of each set of three levels, the offering taken to the end determines what the player can ask for.
+                Different offerings are of different sizes, impacting how levels need to be solved.
+                The sections discussed here are based on my contributions to the project, not an overview of everything in it.
+            </p>
+
+            <div class="portfolio_item">
+                <H3>Grid Based Movement<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/FrogQuest/FQ_GridMovement.gif">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text"> The key puzzle mechanic in this game is the grid based movement. For this I created a custom movment component that would check if an object can be pushed in a given direction a set amount.
+                            If the object can be pushed it will move that far. This is able to chain to pushing multiple objects of different sizes, allowing the player to push multiple boxes at once.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Fire Spread Mechanic<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Another mechanic used in multiple levels is fire spread. Objects, both movable or not, can be set on fire - spreading fire to adjacent tiles. These flammable objects are either sources (will never burn out) or burn out and decay after a set amount of time.
+                            This mechanic is used to clear out trees or burn down bridges in the level.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/FrogQuest/FQ_Fire.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Puzzle Design<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/FrogQuest/FQ_PuzzleDesign.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">I was also resposible for designing the 9 different puzzles used in the game. With each puzzle increasing in difficulty and introducing new mechanics, such as pushing boxes out the way, pistons, fire or breakable walls.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Story Objects<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">I collaborated with my other group members to help make the story manager and objects. The offerings would be pushed to the end of the level and the one moved would be detected and placed in the next level. 
+                            Then once moved to the end of the set of levels the different objects will offer different choices of which pedestals are avaible to ask for, changing the story and gameplay options moving forward.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/FrogQuest/FQ_StoryObjects.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>

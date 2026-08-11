@@ -1,0 +1,279 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    padding: 0.5vw;
+    background-color: #ffffff6b;
+    border: 0px solid #000000;
+    z-index: 2;
+}
+
+nav {
+    height: 3vw;
+}
+
+section {
+    scroll-margin-top: 5vw;
+    margin-top: 3rem;
+}
+
+h1 {
+    text-align: left;
+    font-size: 10vw;
+    color:#0087ca;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+h3 {
+    text-align: left;
+    font-size: 3vw;
+    margin: 5px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 3vw;
+    color: #0087ca;
+    margin: 0;
+}
+
+h5 {
+    text-align: left;
+    font-size: 3vw;
+    color: #042637;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding-left: 4%;
+}
+
+.nav_button {
+    display: inline-block;
+    background-color: #ffffff00;
+    border: #00000000;
+    position: relative;
+    margin: 5px;
+    font-size: 3vw;
+}
+
+.nav_button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom right;
+}
+
+.nav_button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header_button {
+    display: inline-block;
+    background-color: #00000000;
+    border: #00000000;
+    color: #000000;
+    font-size: 2vw;
+    vertical-align:top;
+}
+
+.header_button:hover {
+      background-color:#50505050;
+      transition: 0.5s;
+  }
+
+
+.CV_button {
+    background-color: #02a5f7;
+    border: #00000000;
+    color: #000000;
+    font-size: 2vw;
+    padding: 0.25rem;
+    border-radius: 0.75rem;
+    vertical-align:top;
+    float: right;
+    text-decoration: none;
+}
+
+.CV_button:hover {
+      background-color:#0087ca;
+      transition: 0.5s;
+  }
+
+.portfolio_item {
+    min-height: 100px;
+    background-color: rgb(226, 225, 225);
+    padding-top: 1%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.portfolio_item_content{
+    margin: 0.5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.portfolio_text_wrapper{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.portfolio_text{
+    font-size: 2vw;
+    margin-left: 1%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.display_wrapper{
+    position: relative;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.display{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -075rem hsla(0,0%,0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.display img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    scroll-margin-top: 7rem;
+}
+
+.display_nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.display_nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color:#ffffff;
+    opacity: 0.75;
+    transition: opacity ease 0.25s;
+}
+
+.display_nav a:hover{
+    opacity: 1;
+}
+
+/*not all actually gifs anymore due to file size restrictions*/
+.gif {
+    aspect-ratio: 16/9;
+    box-shadow: 0 1.5rem 3rem -075rem hsla(0,0%,0%, 0.25);
+    border-radius: 0.5rem;
+    max-width: 95%;
+}
+
+.ProfilePic {
+    border-radius: 50%;
+    width: 20rem;
+}
+
+.centered_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered_text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.greyed {
+    background-color:#60606000;
+}
+
+.contact_content {
+    margin: 0%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    align-items:center
+}
+
+.contact_section {
+    display: inline-block;
+    background-color: #f1f1f100;
+    border: 0px solid black;
+    padding: 1rem;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.contact_section p{
+    float: left;
+    font-size: 2vw;
+    padding-left: 1rem;
+}
+
+.contact_icon {
+    position: relative;
+    max-width: 5rem;
+    max-height: 5rem;
+    margin: 5px auto;
+    float:left
+}
+
+.home_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  background-color: #0000001f;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+
+.home_column {
+  flex: 10%;
+  padding: 0.5rem;
+}
+
+.home_column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+}

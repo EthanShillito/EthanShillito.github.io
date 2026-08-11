@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <header>
+        <title>Ethan Shillito</title>
+        <nav>
+            <button class="header_button" onclick="location.href = '../index.html';">Back</button>
+        </nav>
+    </header>
+
+    <body>
+        <section>
+            <H2>Attachable actors</H2>
+
+            <p class="portfolio_text">A prototype for a game jam that makes use of a custom C++ component and the physics component to attach multiple actors together - functioning like a simple version of the ultrahand from Tears of the Kingdom.
+            </p>
+
+            <div class="portfolio_item">
+                <H3>Grabbable Objects<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/Attachable_actors/AA_Holding.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Certain objects in the world are able to be picked up, moved and rotated using the physics handle components in Unreal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Attachment Point<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">When the player is holding a grabbable object and places one of its attachment points (shown in blue) next to another attachment point, on another grabbable or the player, they can press a button to call the attach function on the component to connect the two actors together.
+                            If the player picks the grabbable back up it will call the disconnecting method on each of its attachment points.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/Attachable_actors/AA_Attach.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Spinning Character<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/Attachable_actors/AA_Spin.gif">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">The main character uses physics based movement to roll around the map. By spinning while having attached objects on it, it can scale walls by using them like legs while spinning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Physics Constraint<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Unfortualty I found that when chaining the physics constraint component multiple times the engine doesn't manage to keep the connections rigid, even with the settings to do so. Making it hard to use this approach for more complex legs and gameplay that had been intended with this mechanic.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/Attachable_actors/AA_PhysicsConstraint.png">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </body>
+
+</html>

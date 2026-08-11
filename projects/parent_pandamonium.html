@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <header>
+        <title>Ethan Shillito</title>
+        <nav>
+            <button class="header_button" onclick="location.href = '../index.html';">Back</button>
+        </nav>
+    </header>
+
+    <body>
+        <section>
+            <H2>Parent pandamonium</H2>
+            <p class="portfolio_text">This was a game development coursework focused on tutorials and explaining mechanics.
+                            In this game the player must complete tasks around the house while looking after the baby that will try to crawl into danger.
+                            The sections discussed here are based on my contributions to the project, not an overview of everything in it.
+            </p>
+
+            <div class="portfolio_item">
+                <H3>A* pathfinding<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/ParentPandamonium/PP_Pathfinding.gif">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">For the movement of the baby I implemented the A* algorithm with a pathfinding grid (shown with the blue debug lines). This allows the baby to move across the map to the spots it chooses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Baby Logic<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">I was also responsible for the logic of the baby movement. 
+                            The baby will choose random spots on the pathfinding gird to move to. 
+                            Then at given (range randomised) intervals it will pick (and highlight) a dangerous object, like the oven and try to move towards it for a set amount of time. If the baby reaches the danger object it is game over.
+                            To prevent this the player can pick up the baby and carry them elsewhere - although they can't perform tasks while holding the baby and so must put the baby back down. 
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/ParentPandamonium/PP_BabyScripting.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Level Scripting<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/ParentPandamonium/PP_End.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">I also set up the success and fail states for the game, including the timer for tasks to be completed by and the end of level screens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+                <H3>Level Design<H3>
+                <div class="portfolio_item_content">
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Each member was responsible for designing one level for the game. I put together the final level which had the most tasks, danger items and obstacles around the room to slow the player down.
+                        </p>
+                    </div>
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/ParentPandamonium/PP_LevelDesign.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio_item">
+             <H3>Menu Programming<H3>
+                <div class="portfolio_item_content">
+                    <div class="display_wrapper">
+                        <img class="gif" src="../images/ParentPandamonium/PP_MenuImage.png">
+                    </div>
+                    <div class="portfolio_text_wrapper">
+                        <p class="portfolio_text">Additionally I set up the logic for menu functionality to start a game, go to a specific level and to allow the player to skip the tutorial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
